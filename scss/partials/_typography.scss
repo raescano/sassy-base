@@ -1,0 +1,60 @@
+/* TYPOGRAPHY */
+
+body{
+    font-size: 100%; /* 16px */
+    font-family: $type-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $type-heading;
+    margin: 0 0 0.5em 0;
+    max-width: $type-linewidth;
+}
+
+/* -------------------------
+
+Traditional Typographic Scale
+48, 36, 24, 21, 18, 16
+
+------------------------- */
+
+/* 48 / 16 = 3em */ 
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+} 
+
+/* 36 / 16 = 2.25em */ 
+h2 {
+    font-size: 2.25em;
+    line-height: 1em;
+} 
+
+/* 24 / 16 = 1.5em */ 
+h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+} 
+
+/* 21 / 16 = 1.3125em */ 
+h4 {
+    font-size: 1.3125em;
+    line-height: 1em;
+} 
+
+/* 18 / 16 = 1.125em */ 
+h5 {
+    font-size: 1.125em;
+    line-height: 1em;
+} 
+
+/* 16 / 16 = 1em */ 
+h6 {
+    font-size: 1em;
+    line-height: 1em;
+} 
+
+p {
+    margin: 0 0 0.5em 0;
+    max-width: $type-linewidth;
+}

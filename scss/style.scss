@@ -1,0 +1,12 @@
+/* VARIABLES */
+$color-background: rgb(228, 228, 255);
+$type-base: Helvetica, Arial, sans-serif;
+$type-heading: Georgia, serif;
+$type-linewidth: 38em;
+
+body{
+    background: $color-background;
+}
+
+@import "partials/toc";
+@import "partials/typography";
