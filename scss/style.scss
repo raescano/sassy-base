@@ -1,12 +1,14 @@
 /* VARIABLES */
 $color-background: rgb(228, 228, 255);
-$type-base: Helvetica, Arial, sans-serif;
-$type-heading: Georgia, serif;
+$type-base: "Rubik", Helvetica, Arial, sans-serif;
+$type-heading: "Playfair Display",Georgia, serif;
 $type-linewidth: 38em;
+$type-color-body: #888;
+$type-color-headings: rgba(87, 68, 92, 1);
+$type-color-lightgrey: rgba(0, 0, 0, .2);
 
-body{
-    background: $color-background;
-}
+// COLOR
+$accent-color: #640000;
 
 @import "partials/toc";
 @import "partials/typography";
