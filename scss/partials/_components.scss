@@ -1,0 +1,30 @@
+/* COMPONENTS */
+
+// BUTTONS
+
+a.button, .button {
+    font-size: .8em;
+    letter-spacing: .1em;
+    display: inline-block;
+    background: $link-color;
+    padding: 1.25em 2.5em;
+    border-radius: .32em;
+    border: 1px solid $link-color;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &.alt {
+        background: rgba(255, 255, 255, 0);
+        border: 1px solid $link-color;
+        color: $link-color;
+    }
+
+    &:hover,
+    &.alt:hover {
+        color: #fff;
+        border: 1px solid $link-color-dark;
+        background: $link-color-dark;
+        }
+
+}

@@ -4,9 +4,14 @@
 CSS TABLE OF CONTENTS
 
 # TYPOGRAPHY
-# BUTTONS 
+    # TYPOGRAHPIC SCALE
+    # TYPE SPECIMEN
+# COMPONENTS
+    # BUTTONS 
 # LAYOUT
-    # GRID
+    # MEDIA QUERIES
+    # CONTAINER
+    # RESPONSIVE TYPE
 
 ------------------------------- */
 /* TYPOGRAPHY */
@@ -89,3 +94,62 @@ hr {
   font-size: .875em;
   color: rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5em; }
+
+/* COMPONENTS */
+a.button, .button {
+  font-size: .8em;
+  letter-spacing: .1em;
+  display: inline-block;
+  background: #ffd2d2;
+  padding: 1.25em 2.5em;
+  border-radius: .32em;
+  border: 1px solid #ffd2d2;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none; }
+  a.button.alt, .button.alt {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #ffd2d2;
+    color: #ffd2d2; }
+  a.button:hover, a.button.alt:hover, .button:hover, .button.alt:hover {
+    color: #fff;
+    border: 1px solid #a83434;
+    background: #a83434; }
+
+/* LAYOUT */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%; }
+
+body {
+  font-size: 87.5%;
+  /* 14px*/
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 100%;
+    /* 16px*/ }
+  .container {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  body {
+    font-size: 100%;
+    /* 16px*/ }
+  .container {
+    max-width: 1200px;
+    padding: 0 50px; } }
+
+@media (min-width: 1250px) {
+  body {
+    font-size: 112.5%;
+    /* 14px*/ }
+  .container {
+    max-width: 1200px; } }
