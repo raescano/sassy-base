@@ -1,0 +1,32 @@
+/* STRUCTURE */
+
+header {
+    background: white;
+    display: flex; 
+    justify-content: space-between;
+    
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $link-color-dark;
+    }
+
+    .site-navigation {
+       ul {
+           display: flex;
+           list-style: none;
+       }
+
+       a {
+           display: block;
+           padding: 1em;
+       }
+
+       a:hover {
+           color: $link-color-dark;
+       }
+    }
+}

@@ -11,7 +11,7 @@ $type-color-lightgrey: rgba(0, 0, 0, .2);
 $link-color: rgb(255, 210, 210);
 $link-color-dark: rgb(168, 52, 52);
 $accent-color: #640000; 
-
+ 
 // BREAKPOINTS
 
 $breakpoint-small: 768px;
@@ -22,3 +22,4 @@ $breakpoint-large: 1250px;
 @import "partials/typography";
 @import "partials/components";
 @import "partials/layout";
+@import "partials/structure"; 

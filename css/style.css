@@ -12,6 +12,12 @@ CSS TABLE OF CONTENTS
     # MEDIA QUERIES
     # CONTAINER
     # RESPONSIVE TYPE
+# STRUCTURE
+    # SITE HEADER
+    # SITE NAVIGATION
+    # SECTIONS
+    # SITE FOOTER
+# ANIMATION 
 
 ------------------------------- */
 /* TYPOGRAPHY */
@@ -192,3 +198,28 @@ body {
   padding: 1em;
   background: #ddd;
   text-align: center; }
+
+/* STRUCTURE */
+header {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  header a {
+    color: #ffd2d2;
+    text-decoration: none; }
+  header a:hover {
+    color: #a83434; }
+  header .site-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+  header .site-navigation a {
+    display: block;
+    padding: 1em; }
+  header .site-navigation a:hover {
+    color: #a83434; }
