@@ -191,8 +191,7 @@ body {
       -ms-flex-positive: 0;
       flex-grow: 0;
       -ms-flex-preferred-size: 768px;
-      flex-basis: 768px;
-      border: 1px solid red; } }
+      flex-basis: 768px; } }
 
 .demo .column {
   padding: 1em;
@@ -200,26 +199,62 @@ body {
   text-align: center; }
 
 /* STRUCTURE */
-header {
-  background: white;
+.site-header,
+.site-footer {
+  background: black; }
+  .site-header a,
+  .site-footer a {
+    color: #ffd2d2;
+    text-decoration: none; }
+  .site-header a:hover,
+  .site-footer a:hover {
+    color: #a83434; }
+  .site-header .site-navigation ul,
+  .site-footer .site-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    @media (max-width: 767px) {
+      .site-header .site-navigation ul,
+      .site-footer .site-navigation ul {
+        display: block; } }
+  .site-header .site-navigation a,
+  .site-footer .site-navigation a {
+    display: block;
+    padding: 1.6em 1em 1.4em 1em; }
+    @media (max-width: 767px) {
+      .site-header .site-navigation a,
+      .site-footer .site-navigation a {
+        padding: .5em 1em; } }
+  .site-header .site-navigation a:hover,
+  .site-footer .site-navigation a:hover {
+    color: #a83434; }
+
+.site-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  header a {
-    color: #ffd2d2;
-    text-decoration: none; }
-  header a:hover {
-    color: #a83434; }
-  header .site-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none; }
-  header .site-navigation a {
-    display: block;
-    padding: 1em; }
-  header .site-navigation a:hover {
-    color: #a83434; }
+  @media (max-width: 767px) {
+    .site-header {
+      display: block;
+      padding: 1em 0; } }
+  .site-header .site-identity h1 {
+    font-size: 1.5em;
+    margin: 0; }
+    .site-header .site-identity h1 a {
+      padding: 1em .75em;
+      display: block; }
+
+.site-footer ul {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+section {
+  padding: 3em; }

@@ -1,10 +1,8 @@
 /* STRUCTURE */
 
-header {
-    background: white;
-    display: flex; 
-    justify-content: space-between;
-    
+.site-header,
+.site-footer {
+    background: black;
     a {
         color: $link-color;
         text-decoration: none;
@@ -13,20 +11,59 @@ header {
     a:hover {
         color: $link-color-dark;
     }
-
     .site-navigation {
-       ul {
-           display: flex;
-           list-style: none;
-       }
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @media (max-width: $breakpoint-small - 1) {
+             display: block;
+         }
+        }
+ 
+        a {
+            display: block;
+            padding: 1.6em 1em 1.4em 1em;
+ 
+            @media (max-width: $breakpoint-small - 1) {
+             padding: .5em 1em;
+         }
+ 
+        }
+ 
+        a:hover {
+            color: $link-color-dark;
+        }
+     }
+}
 
-       a {
-           display: block;
-           padding: 1em;
-       }
-
-       a:hover {
-           color: $link-color-dark;
-       }
+.site-header {
+    display: flex; 
+    justify-content: space-between;
+    @media (max-width: $breakpoint-small - 1) {
+        display: block;
+        padding: 1em 0;
     }
+
+    .site-identity {
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+            a {
+                padding: 1em .75em;
+                display: block;
+            }
+        }
+    }
+}
+
+.site-footer {
+    ul {
+    justify-content: center;
+    }
+}
+
+section {
+    padding: 3em;
 }
