@@ -67,3 +67,24 @@
 section {
     padding: 3em;
 }
+
+.hero {
+    background-color: $hero-bg-color;
+    padding: 5em 0;
+}
+
+.sectionhead {
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    max-width: none;
+}
+
+.sectionhead:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $accent-color;
+    width: 10%;
+    margin: 1em auto 3em auto;
+}

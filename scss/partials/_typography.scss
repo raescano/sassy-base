@@ -96,3 +96,11 @@ hr {
     color: $type-color-lightgrey;
     margin-bottom: 1.5em;
 }
+
+.textcentered {
+    text-align: center;
+    * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
