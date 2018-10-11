@@ -66,6 +66,9 @@ $grid-column-gap: 1%;
     @media (max-width: $breakpoint-small - 1) {
         justify-content: flex-start;
     }
+    &.swapped{
+     flex-direction:row-reverse;   
+    }
 
 }
 
@@ -77,6 +80,9 @@ $grid-column-gap: 1%;
     @media (max-width: $breakpoint-small - 1) {
         flex-grow: 0;
         flex-basis: $breakpoint-small;
+    }
+    &.one-half{
+        width: 50 - $grid-column-gap;
     }
 }
  
